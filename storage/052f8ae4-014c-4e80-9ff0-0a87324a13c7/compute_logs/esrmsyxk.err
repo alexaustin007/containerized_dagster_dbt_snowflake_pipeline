@@ -1,0 +1,7 @@
+2025-05-22 08:59:33 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - LOGS_CAPTURED - Started capturing logs in process (pid: 2002).
+2025-05-22 08:59:33 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - load_file_to_snowflake - STEP_START - Started execution of step "load_file_to_snowflake".
+2025-05-22 08:59:42 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - load_file_to_snowflake - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2025-05-22 08:59:42 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - load_file_to_snowflake - Writing file at: /app/storage/load_file_to_snowflake using PickledObjectFilesystemIOManager...
+2025-05-22 08:59:42 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - load_file_to_snowflake - ASSET_MATERIALIZATION - Materialized value load_file_to_snowflake.
+2025-05-22 08:59:42 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - load_file_to_snowflake - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2025-05-22 08:59:42 +0000 - dagster - DEBUG - __ASSET_JOB - 052f8ae4-014c-4e80-9ff0-0a87324a13c7 - 2002 - load_file_to_snowflake - STEP_SUCCESS - Finished execution of step "load_file_to_snowflake" in 9.06s.

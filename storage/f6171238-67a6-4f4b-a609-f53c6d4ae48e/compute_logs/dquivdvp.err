@@ -1,0 +1,7 @@
+2025-05-22 09:04:47 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - LOGS_CAPTURED - Started capturing logs in process (pid: 637).
+2025-05-22 09:04:47 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - load_file_to_snowflake - STEP_START - Started execution of step "load_file_to_snowflake".
+2025-05-22 09:04:55 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - load_file_to_snowflake - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2025-05-22 09:04:55 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - load_file_to_snowflake - Writing file at: /app/storage/load_file_to_snowflake using PickledObjectFilesystemIOManager...
+2025-05-22 09:04:55 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - load_file_to_snowflake - ASSET_MATERIALIZATION - Materialized value load_file_to_snowflake.
+2025-05-22 09:04:55 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - load_file_to_snowflake - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2025-05-22 09:04:55 +0000 - dagster - DEBUG - __ASSET_JOB - f6171238-67a6-4f4b-a609-f53c6d4ae48e - 637 - load_file_to_snowflake - STEP_SUCCESS - Finished execution of step "load_file_to_snowflake" in 8.22s.

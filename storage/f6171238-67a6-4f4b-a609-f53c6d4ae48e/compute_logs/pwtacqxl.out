@@ -1,0 +1,15 @@
+[0m09:04:57  Running with dbt=1.9.4
+[0m09:04:57  Registered adapter: snowflake=1.9.4
+[0m09:04:58  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:04:58  Found 2 models, 1 source, 476 macros
+[0m09:04:58  
+[0m09:04:58  Concurrency: 1 threads (target='dev')
+[0m09:04:58  
+[0m09:05:04  
+[0m09:05:04  Finished running  in 0 hours 0 minutes and 5.92 seconds (5.92s).
+[0m09:05:04  Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "my_db"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.

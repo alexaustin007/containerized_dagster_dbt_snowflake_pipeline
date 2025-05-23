@@ -1,0 +1,6 @@
+dagster
+dagster-webserver
+dbt-core
+dbt-snowflake
+pandas
+snowflake-connector-python

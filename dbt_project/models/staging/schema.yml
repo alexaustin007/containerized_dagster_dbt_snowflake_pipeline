@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: MY_SCHEMA
+    database: my_db
+    schema: MY_SCHEMA
+    tables:
+      - name: your_table
+
+models:
+  - name: transformed_table
+    description: "Transformed table with doubled value column"
+    columns:
+      - name: id
+        description: "Primary key"
+      - name: name
+        description: "Name field"
+      - name: value
+        description: "Original value"
+      - name: double_value
+        description: "Value multiplied by 2"

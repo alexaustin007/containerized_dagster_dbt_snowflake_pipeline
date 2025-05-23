@@ -1,0 +1,10 @@
+2025-05-13 22:23:59 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - LOGS_CAPTURED - Started capturing logs in process (pid: 959).
+2025-05-13 22:23:59 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - STEP_START - Started execution of step "dbt_transform".
+2025-05-13 22:23:59 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - dbt_transform - Loading file from: /app/storage/load_file_to_snowflake using PickledObjectFilesystemIOManager...
+2025-05-13 22:23:59 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - LOADED_INPUT - Loaded input "load_file_to_snowflake" using input manager "io_manager", from output "result" of step "load_file_to_snowflake"
+2025-05-13 22:23:59 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - STEP_INPUT - Got input "load_file_to_snowflake" of type "Any". (Type check passed).
+2025-05-13 22:24:01 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2025-05-13 22:24:01 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - dbt_transform - Writing file at: /app/storage/dbt_transform using PickledObjectFilesystemIOManager...
+2025-05-13 22:24:01 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - ASSET_MATERIALIZATION - Materialized value dbt_transform.
+2025-05-13 22:24:01 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2025-05-13 22:24:01 +0000 - dagster - DEBUG - __ASSET_JOB - 9027508e-6638-47b0-837c-9995f4c0ee35 - 959 - dbt_transform - STEP_SUCCESS - Finished execution of step "dbt_transform" in 2.07s.

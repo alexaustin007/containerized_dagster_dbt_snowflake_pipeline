@@ -1,0 +1,29 @@
+2025-05-13 22:20:20 +0000 - dagster - DEBUG - __ASSET_JOB - 6d6d0b1c-fef9-4479-aae0-9dcc9e0d7252 - 789 - LOGS_CAPTURED - Started capturing logs in process (pid: 789).
+2025-05-13 22:20:20 +0000 - dagster - DEBUG - __ASSET_JOB - 6d6d0b1c-fef9-4479-aae0-9dcc9e0d7252 - 789 - load_file_to_snowflake - STEP_START - Started execution of step "load_file_to_snowflake".
+2025-05-13 22:20:27 +0000 - dagster - ERROR - __ASSET_JOB - 6d6d0b1c-fef9-4479-aae0-9dcc9e0d7252 - 789 - load_file_to_snowflake - STEP_FAILURE - Execution of step "load_file_to_snowflake" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "load_file_to_snowflake"::
+
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 1 at position 33
+invalid identifier 'ALICE'
+
+Stack Trace:
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 56, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    next_output = next(iterator)
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/usr/local/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 117, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/app/dagster_project/assets/load_file.py", line 20, in load_file_to_snowflake
+    cursor.execute(
+  File "/usr/local/lib/python3.10/site-packages/snowflake/connector/cursor.py", line 1134, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 279, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 334, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 210, in default_errorhandler
+    raise error_class(
+

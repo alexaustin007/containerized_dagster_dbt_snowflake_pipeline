@@ -1,0 +1,12 @@
+services:
+  dagster:
+    build: .
+    ports:
+      - "3000:3000"  # Exposes internal 3000 to your local machine
+    volumes:
+      - .:/app
+      - ~/.dbt:/root/.dbt
+      - ./dbt_project:/app/dbt_project
+      - ./dbt_project.yml:/app/dbt_project.yml
+    environment:
+      - DAGSTER_HOME=/app

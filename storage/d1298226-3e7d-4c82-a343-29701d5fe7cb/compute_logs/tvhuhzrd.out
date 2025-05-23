@@ -1,0 +1,6 @@
+[0m08:23:22  Running with dbt=1.9.4
+[0m08:23:22  Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m08:23:22  Encountered an error:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!

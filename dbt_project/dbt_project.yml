@@ -1,0 +1,11 @@
+name: 'example_dbt_project'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+
+models:
+  staging:
+    materialized: view
